@@ -31,12 +31,23 @@ git clone https://github.com/SURJO99exe/Surjo-Live.git
 cd Surjo-Live
 ```
 
-2. Install dependencies:
+2. Create a virtual environment (recommended):
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Configure credentials:
+4. Configure credentials:
 Create a `SurjoLive.txt` file with your UID and password in JSON format:
 ```json
 {
